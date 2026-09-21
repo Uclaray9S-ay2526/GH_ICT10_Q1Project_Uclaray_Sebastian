@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seb's Coffee Shop - Receipt Generator</title>
+
+    <!-- PyScript CSS & JS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">☕ Seb's Café</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Receipt Generator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sku.html">SKU Generator</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow-lg border-0 p-4 bg-white rounded-4">
+                    <h2 class="text-center mb-4 fw-bold text-coffee">Seb's Coffee Shop</h2>
+
+                    <form class="order-form mb-4">
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" id="item1" type="checkbox" value="67">
+                            <label class="form-check-label" for="item1">Black/white Espresso - 50</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" id="item2" type="checkbox" value="167">
+                            <label class="form-check-label" for="item2">Matcha Latte - 95</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" id="item3" type="checkbox" value="93">
+                            <label class="form-check-label" for="item3">Macchiato - 85</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" id="item4" type="checkbox" value="97">
+                            <label class="form-check-label" for="item4">Black Coffee - 65</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" id="item5" type="checkbox" value="123">
+                            <label class="form-check-label" for="item5">White Mocha - 67777</label>
+                        </div>
+                    </form>
+
+                    <button type="button" class="btn btn-coffee w-100 py-2 mb-4 fw-bold shadow-sm" py-click="create_order">Create Order</button>
+
+                    <!-- Result Box -->
+                    <div id="result" class="p-3 mb-3 rounded text-white text-center fw-semibold"></div>
+
+                    <hr class="text-muted">
+
+                    <!-- Order Output -->
+                    <div id="show" class="text-muted text-center fst-italic">Your order is shown here.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 text-muted bg-light border-top mt-auto">
+        <small>SKU GENERATOR –– 1st Quarter Project</small>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <!-- PyScript Source -->
+    <py-script src="main.py"></py-script>
+</body>
+</html>

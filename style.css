@@ -1,0 +1,47 @@
+/* Global Styles & Font */
+body {
+    font-family: 'Lora', serif;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Custom Color Palette (Coffee Theme) */
+.navbar {
+    background-color: #3e2723 !important;
+}
+
+.text-coffee {
+    color: #3e2723;
+}
+
+.btn-coffee {
+    background-color: #6f4e37;
+    color: white;
+    border: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-coffee:hover {
+    background-color: #5c3a21;
+    color: white;
+}
+
+/* Customizing the PyScript Result Box */
+#result {
+    background-color: #4e342e !important;
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 1rem;
+}
+
+/* Form checkboxes */
+.form-check-input:checked {
+    background-color: #6f4e37;
+    border-color: #6f4e37;
+}
